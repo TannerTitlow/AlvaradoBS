@@ -31,12 +31,12 @@ phases:
     commands:
       - echo "Running migrations..."
       - export ASPNETCORE_ENVIRONMENT="Production"
-      - dotnet tool install --global dotnet-ef --version 5.0.12
+      - dotnet tool install --global dotnet-ef
       - cd ..
       - cd AlvaradoBS.EntityFrameworkCore
       - $HOME/.dotnet/tools/dotnet-ef database update --verbose
-      - apt-get update
-      - apt-get -y install zip       
+      - sudo yum update
+      - sudo yum -y install zip       
       - export ASPNETCORE_ENVIRONMENT="Production"
       - export AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY_ID"
       - export AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY"
