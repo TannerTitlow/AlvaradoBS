@@ -1,0 +1,9 @@
+{
+    "region": "us-east-1",
+    "application": "AlvaradoBS_Production",
+    "environment": "alvaradoBS-production-env",
+    "iis-website": "Default Web Site",
+    "app-path": "/",
+    "enable-xray": false,
+    "configuration": "Release"
+}
